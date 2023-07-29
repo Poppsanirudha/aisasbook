@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="css/fotorama.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <title>Asiasbook</title>
+</head>
+
+<body>
+  <img class="bg-object fixed-bottom" src="img/bg-img1.png" alt="">
+
+  <div id="mySidenav" class="sidenav">
+    <p class="username-top">Anirudha</p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul class="navbar-nav px-4 mb-5" onclick="closeNav()">
+      <!-- <li class="nav-item ">
+                <a class="nav-link" href="#home-section">Home</a>
+            </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#home-section">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">GALLERY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog-head-section">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog-head-section">SUPPORT US</a>
+      </li>
+      <!-- <li class="nav-item ">
+                <a class="nav-link" href="#organaization-head-section">Organisations</a>
+            </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#share-head-section">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#share-head-section">CONTACT US</a>
+      </li>
+
+
+    </ul>
+    <div class=" login-box">
+      <a class="btn btn-outline-success btn-sm login-button mt-5" href="index.html" name="button">LOGOUT</a>
+    </div>
+
+  </div>
+
+  <nav class="navbar navbar-dark navbar-expand-md" uk-sticky="">
+    <div class="container">
+      <div class="UploadBox">
+        <!-- <p class="UploadText">Upload Image</p> -->
+        <button class="UploadBtn" name="button" data-toggle="modal" data-target="#beforeafterpost"><i class="fa fa-camera" aria-hidden="true"></i></button>
+      </div>
+      <div class="m-box text-center">
+      <a href="#home-section" class="logo">
+        <img src="img/blacklogo.png" alt="">
+      </a>
+      </div>
+        <!-- <div><p class="btn btn-outline-light uploadBtnNav" data-toggle="modal" data-target="#createpost"><i class="fa fa-picture-o" aria-hidden="true"></i> Upload Image</p></div> -->
+      <!-- <a class="logo logotitle text-right" href="#home-section">Asiasbook</a> -->
+      <p id="hamburger" style="color: black; font-size:30px;cursor:pointer; margin: 0;" onclick="openNav()">&#9776;</p>
+
+
+
+      <!-- <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarnav">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    </div>
+  </nav>
+
+  <section id="bef-aft-section" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 py-3 text-right">
+          <figure class="cd-image-container">
+            <img src="img/2.jpg" alt="Original Image">
+            <span class="cd-image-label" data-type="original">AFTER</span>
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+              <img src="img/1.jpg" alt="Modified Image">
+              <span class="cd-image-label" data-type="modified">BEFORE</span>
+            </div>
+        
+            <span class="cd-handle"></span>
+            
+          </figure>
+          <div class="bef-aft-info">
+            <div class="bef-box">
+              <span class="bef-street">Moshjid Market road</span>
+              <span class="bef-date">05.04.2003</span>
+            </div>
+            <div class="bef-box">
+              <span class="bef-area">Mirpur, Dhaka</span>
+              <span class="bef-user">Anirudha.h</span>
+            </div>
+          </div>
+           <!-- cd-image-container -->
+        </div>
+        <div class="col-md-6 py-3">
+          <figure class="cd-image-container">
+            <img src="img/trash4.png" alt="Original Image">
+            <span class="cd-image-label" data-type="original">AFTER</span>
+        
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+              <img src="img/trash3.png" alt="Modified Image">
+              <span class="cd-image-label" data-type="modified">BEFORE</span>
+            </div>
+        
+            <span class="cd-handle"></span>
+          </figure> <!-- cd-image-container -->
+          <div class="bef-aft-info">
+            <div class="bef-box">
+              <span class="bef-street">Asadgate road</span>
+              <span class="bef-date">07.05.2023</span>
+            </div>
+            <div class="bef-box">
+              <span class="bef-area">Dhanmondi</span>
+              <span class="bef-user">ahmed.nobi</span>
+            </div>
+          </div>
+        </div>
+        <div class="buttons wow fadeIn col-12 mt-5">
+          <button class="button">VIEW ALL</button>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    
+      
+    </section>
+
+
+
+
+
+
+<!-- BEFOR AFTER UPLOAD Box -->
+ <div class="modal fade"  tabindex="2" role="dialog" aria-hidden="true" id="beforeafterpost">
+  <div class="container">
+    <div class="modal-dialog text-dark" id="fy">
+      <div class="modal-content create-post-box text-dark">
+        <div class="modal-header">
+          <div class="mt-1">
+            <span class="lead pt-3"><b>BEFOR AFTER IMAGE UPLOAD</b></span><br>
+
+          </div>
+          <button class="close text-dark uk-animation-scale-down" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body f-pass comment-modal-body">
+          আপনার পরিচ্ছন্নতার প্রচেষ্টার ছবি শেয়ার করে ঢাকাকে পরিচ্ছন্ন রাখতে আমাদের সাথে যোগ দিন। আপনার ফটোগুলি আপলোড করতে এবং অন্যদেরকে ভিন্নতা আনতে অনুপ্রাণিত করতে শুধু "আগে" এবং "পরে" ছবিতে ক্লিক করুন৷
+          <form>
+<div class="form-row">
+
+ <div class="form-group col-12 comment-dropdown">
+   <select class="custom-select mr-sm-2 form-control green-outline " id="inlineFormCustomSelect" required>
+     <option selected hidden>Area</option>
+     <option value="1">Chawk Bazar</option>
+     <option value="1">Dhanmondi</option>
+     <option value="1">Hemayetpur</option>
+     <option value="1">Krwan Bazar</option>
+     <option value="1">Mirpur</option>
+     <option value="1">Mohommodpur</option>
+     <option value="1">Mohakhali</option>
+     <option value="1">Motijhil</option>
+     <option value="1">Shahbug</option>
+    <option value="1">Shawrapara</option>
+
+   </select>
+ </div>
+
+ <input class="form-control green-outline mb-4" type="text" placeholder="Write street/road" required>
+
+  <div class="avatar-upload">
+     <div class="avatar-edit">
+         <input required type='file' id="beforimageupload" accept=".png, .jpg, .jpeg" />
+         <label for="beforimageupload"><i class="fa fa-camera" aria-hidden="true"></i>
+</label>
+     </div>
+     <div class="avatar-preview">
+         <div id="beforeimage" style="background-image: url(https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-image-upload-icon-photo-upload-icon-png-image_2047545.jpg);">
+         </div>
+     </div>
+ </div>
+
+
+ <div class="avatar-upload">
+  <div class="avatar-edit">
+      <input required type='file' id="afterimageupload" accept=".png, .jpg, .jpeg" />
+      <label for="afterimageupload"><i class="fa fa-camera" aria-hidden="true"></i>
+</label>
+  </div>
+  <div class="avatar-preview">
+      <div id="afterimage" style="background-image: url(https://png.pngtree.com/png-vector/20191129/ourmid/pngtree-image-upload-icon-photo-upload-icon-png-image_2047545.jpg);">
+      </div>
+  </div>
+</div>
+
+
+
+ <!-- <div class="form-group mb-5">
+     <input type="file" id="file">
+ </div> -->
+
+ <button class="btn btn-success btn-block createpost-submit-btn" type="button" name="button">Upload</button>
+
+ <div class="nonuser-login-box">
+                <p>You need to login to upload an image. Click the button below to Login or Sign up</p>
+    <a class="btn btn-outline-success" href="{% url 'index' %}" name="button">LOGIN/REGISTER</a>
+  </div>
+</form>
+</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+  <!-- <script src="js/jquery-2.1.1.js"></script> -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script src="js/textilling.js"></script>
+  <!-- <script src="js/lettering.js"></script> -->
+  <script src="js/fotorama.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="https://use.fontawesome.com/a3068b5bda.js"></script>
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="js/main.js"></script>
+  
+
+  
+
+
+
+</body>
+
+</html>
